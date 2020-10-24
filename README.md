@@ -44,11 +44,11 @@ color name and RGB comes from https://www.w3.org/TR/css-color-4/#named-colors
 to prevent duplicate key, following colors are disabled.
 
 - Grey (and other Greys)
--- use Gray
+  - use Gray
 - Aqua
--- use Cyan
+  - use Cyan
 - Fuchsia
--- use Magenta
+  - use Magenta
 
 
 
