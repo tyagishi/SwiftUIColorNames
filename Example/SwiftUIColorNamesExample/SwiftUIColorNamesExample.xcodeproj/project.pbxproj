@@ -21,7 +21,6 @@
 		36742C4C2544100A0073DC56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36742C4F2544100A0073DC56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		36742C512544100A0073DC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36742C5C2544105A0073DC56 /* SwiftUIColorNames */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftUIColorNames; path = ../../..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +58,6 @@
 				36742C4A254410090073DC56 /* ContentView.swift */,
 				36742C4C2544100A0073DC56 /* Assets.xcassets */,
 				36742C512544100A0073DC56 /* Info.plist */,
-				36742C5C2544105A0073DC56 /* SwiftUIColorNames */,
 				36742C4E2544100A0073DC56 /* Preview Content */,
 			);
 			path = SwiftUIColorNamesExample;
