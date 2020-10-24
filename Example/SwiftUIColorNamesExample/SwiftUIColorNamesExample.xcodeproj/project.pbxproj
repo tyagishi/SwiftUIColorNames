@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36742C49254410090073DC56 /* SwiftUIColorNamesExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36742C48254410090073DC56 /* SwiftUIColorNamesExampleApp.swift */; };
+		36742C4B254410090073DC56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36742C4A254410090073DC56 /* ContentView.swift */; };
+		36742C4D2544100A0073DC56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36742C4C2544100A0073DC56 /* Assets.xcassets */; };
+		36742C502544100A0073DC56 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36742C4F2544100A0073DC56 /* Preview Assets.xcassets */; };
+		36742C5A254410400073DC56 /* SwiftUIColorNames in Frameworks */ = {isa = PBXBuildFile; productRef = 36742C59254410400073DC56 /* SwiftUIColorNames */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		36742C45254410090073DC56 /* SwiftUIColorNamesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIColorNamesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		36742C48254410090073DC56 /* SwiftUIColorNamesExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIColorNamesExampleApp.swift; sourceTree = "<group>"; };
+		36742C4A254410090073DC56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		36742C4C2544100A0073DC56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36742C4F2544100A0073DC56 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		36742C512544100A0073DC56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36742C5C2544105A0073DC56 /* SwiftUIColorNames */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SwiftUIColorNames; path = ../../..; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		36742C42254410090073DC56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36742C5A254410400073DC56 /* SwiftUIColorNames in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36742C3C254410090073DC56 = {
+			isa = PBXGroup;
+			children = (
+				36742C47254410090073DC56 /* SwiftUIColorNamesExample */,
+				36742C46254410090073DC56 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		36742C46254410090073DC56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				36742C45254410090073DC56 /* SwiftUIColorNamesExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		36742C47254410090073DC56 /* SwiftUIColorNamesExample */ = {
+			isa = PBXGroup;
+			children = (
+				36742C48254410090073DC56 /* SwiftUIColorNamesExampleApp.swift */,
+				36742C4A254410090073DC56 /* ContentView.swift */,
+				36742C4C2544100A0073DC56 /* Assets.xcassets */,
+				36742C512544100A0073DC56 /* Info.plist */,
+				36742C5C2544105A0073DC56 /* SwiftUIColorNames */,
+				36742C4E2544100A0073DC56 /* Preview Content */,
+			);
+			path = SwiftUIColorNamesExample;
+			sourceTree = "<group>";
+		};
+		36742C4E2544100A0073DC56 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				36742C4F2544100A0073DC56 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		36742C44254410090073DC56 /* SwiftUIColorNamesExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 36742C542544100A0073DC56 /* Build configuration list for PBXNativeTarget "SwiftUIColorNamesExample" */;
+			buildPhases = (
+				36742C41254410090073DC56 /* Sources */,
+				36742C42254410090073DC56 /* Frameworks */,
+				36742C43254410090073DC56 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUIColorNamesExample;
+			packageProductDependencies = (
+				36742C59254410400073DC56 /* SwiftUIColorNames */,
+			);
+			productName = SwiftUIColorNamesExample;
+			productReference = 36742C45254410090073DC56 /* SwiftUIColorNamesExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		36742C3D254410090073DC56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					36742C44254410090073DC56 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 36742C40254410090073DC56 /* Build configuration list for PBXProject "SwiftUIColorNamesExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 36742C3C254410090073DC56;
+			packageReferences = (
+				36742C58254410400073DC56 /* XCRemoteSwiftPackageReference "SwiftUIColorNames" */,
+			);
+			productRefGroup = 36742C46254410090073DC56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				36742C44254410090073DC56 /* SwiftUIColorNamesExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		36742C43254410090073DC56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36742C502544100A0073DC56 /* Preview Assets.xcassets in Resources */,
+				36742C4D2544100A0073DC56 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		36742C41254410090073DC56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36742C4B254410090073DC56 /* ContentView.swift in Sources */,
+				36742C49254410090073DC56 /* SwiftUIColorNamesExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		36742C522544100A0073DC56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		36742C532544100A0073DC56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		36742C552544100A0073DC56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIColorNamesExample/Preview Content\"";
+				DEVELOPMENT_TEAM = QU378YD9WW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIColorNamesExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smalldesksoftware.SwiftUIColorNamesExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36742C562544100A0073DC56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIColorNamesExample/Preview Content\"";
+				DEVELOPMENT_TEAM = QU378YD9WW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIColorNamesExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smalldesksoftware.SwiftUIColorNamesExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		36742C40254410090073DC56 /* Build configuration list for PBXProject "SwiftUIColorNamesExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36742C522544100A0073DC56 /* Debug */,
+				36742C532544100A0073DC56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		36742C542544100A0073DC56 /* Build configuration list for PBXNativeTarget "SwiftUIColorNamesExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36742C552544100A0073DC56 /* Debug */,
+				36742C562544100A0073DC56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		36742C58254410400073DC56 /* XCRemoteSwiftPackageReference "SwiftUIColorNames" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:tyagishi/SwiftUIColorNames.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		36742C59254410400073DC56 /* SwiftUIColorNames */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36742C58254410400073DC56 /* XCRemoteSwiftPackageReference "SwiftUIColorNames" */;
+			productName = SwiftUIColorNames;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 36742C3D254410090073DC56 /* Project object */;
+}

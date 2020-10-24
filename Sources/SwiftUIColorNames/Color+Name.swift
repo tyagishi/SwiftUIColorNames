@@ -8,15 +8,160 @@
 import Foundation
 import SwiftUI
 
-//public extension Color {
-//  init(redValue: Int, greenValue: Int, blueValue: Int)  {
-//    self.init(red: Double(Color.red)/256.0, green: Double(greenValue)/256.0, blue: Double(blueValue)/256.0)
-//  }
-//}
-//
-
-extension Color {
-  static var colorMap:[String:UInt32] {
+public extension Color {
+  static var mapValueToName:[UInt32:String] {
+    return [
+      0xf0f8ff:"aliceblue",
+      0xfaebd7:"antiquewhite",
+//      0x00ffff:"aqua",
+      0x7fffd4:"aquamarine",
+      0xf0ffff:"azure",
+      0xf5f5dc:"beige",
+      0xffe4c4:"bisque",
+      0x000000:"black",
+      0xffebcd:"blanchedalmond",
+      0x0000ff:"blue",
+      0x8a2be2:"blueviolet",
+      0xa52a2a:"brown",
+      0xdeb887:"burlywood",
+      0x5f9ea0:"cadetblue",
+      0x7fff00:"chartreuse",
+      0xd2691e:"chocolate",
+      0xff7f50:"coral",
+      0x6495ed:"cornflowerblue",
+      0xfff8dc:"cornsilk",
+      0xdc143c:"crimson",
+      0x00ffff:"cyan",
+      0x00008b:"darkblue",
+      0x008b8b:"darkcyan",
+      0xb8860b:"darkgoldenrod",
+      0xa9a9a9:"darkgray",
+      0x006400:"darkgreen",
+//      0xa9a9a9:"darkgrey",
+      0xbdb76b:"darkkhaki",
+      0x8b008b:"darkmagenta",
+      0x556b2f:"darkolivegreen",
+      0xff8c00:"darkorange",
+      0x9932cc:"darkorchid",
+      0x8b0000:"darkred",
+      0xe9967a:"darksalmon",
+      0x8fbc8f:"darkseagreen",
+      0x483d8b:"darkslateblue",
+      0x2f4f4f:"darkslategray",
+//      0x2f4f4f:"darkslategrey",
+      0x00ced1:"darkturquoise",
+      0x9400d3:"darkviolet",
+      0xff1493:"deeppink",
+      0x00bfff:"deepskyblue",
+      0x696969:"dimgray",
+//      0x696969:"dimgrey",
+      0x1e90ff:"dodgerblue",
+      0xb22222:"firebrick",
+      0xfffaf0:"floralwhite",
+      0x228b22:"forestgreen",
+//      0xff00ff:"fuchsia",
+      0xdcdcdc:"gainsboro",
+      0xf8f8ff:"ghostwhite",
+      0xffd700:"gold",
+      0xdaa520:"goldenrod",
+      0x808080:"gray",
+      0x008000:"green",
+      0xadff2f:"greenyellow",
+//      0x808080:"grey",
+      0xf0fff0:"honeydew",
+      0xff69b4:"hotpink",
+      0xcd5c5c:"indianred",
+      0x4b0082:"indigo",
+      0xfffff0:"ivory",
+      0xf0e68c:"khaki",
+      0xe6e6fa:"lavender",
+      0xfff0f5:"lavenderblush",
+      0x7cfc00:"lawngreen",
+      0xfffacd:"lemonchiffon",
+      0xadd8e6:"lightblue",
+      0xf08080:"lightcoral",
+      0xe0ffff:"lightcyan",
+      0xfafad2:"lightgoldenrodyellow",
+      0xd3d3d3:"lightgray",
+      0x90ee90:"lightgreen",
+//      0xd3d3d3:"lightgrey",
+      0xffb6c1:"lightpink",
+      0xffa07a:"lightsalmon",
+      0x20b2aa:"lightseagreen",
+      0x87cefa:"lightskyblue",
+      0x778899:"lightslategray",
+//      0x778899:"lightslategrey",
+      0xb0c4de:"lightsteelblue",
+      0xffffe0:"lightyellow",
+      0x00ff00:"lime",
+      0x32cd32:"limegreen",
+      0xfaf0e6:"linen",
+      0xff00ff:"magenta",
+      0x800000:"maroon",
+      0x66cdaa:"mediumaquamarine",
+      0x0000cd:"mediumblue",
+      0xba55d3:"mediumorchid",
+      0x9370db:"mediumpurple",
+      0x3cb371:"mediumseagreen",
+      0x7b68ee:"mediumslateblue",
+      0x00fa9a:"mediumspringgreen",
+      0x48d1cc:"mediumturquoise",
+      0xc71585:"mediumvioletred",
+      0x191970:"midnightblue",
+      0xf5fffa:"mintcream",
+      0xffe4e1:"mistyrose",
+      0xffe4b5:"moccasin",
+      0xffdead:"navajowhite",
+      0x000080:"navy",
+      0xfdf5e6:"oldlace",
+      0x808000:"olive",
+      0x6b8e23:"olivedrab",
+      0xffa500:"orange",
+      0xff4500:"orangered",
+      0xda70d6:"orchid",
+      0xeee8aa:"palegoldenrod",
+      0x98fb98:"palegreen",
+      0xafeeee:"paleturquoise",
+      0xdb7093:"palevioletred",
+      0xffefd5:"papayawhip",
+      0xffdab9:"peachpuff",
+      0xcd853f:"peru",
+      0xffc0cb:"pink",
+      0xdda0dd:"plum",
+      0xb0e0e6:"powderblue",
+      0x800080:"purple",
+      0x663399:"rebeccapurple",
+      0xff0000:"red",
+      0xbc8f8f:"rosybrown",
+      0x4169e1:"royalblue",
+      0x8b4513:"saddlebrown",
+      0xfa8072:"salmon",
+      0xf4a460:"sandybrown",
+      0x2e8b57:"seagreen",
+      0xfff5ee:"seashell",
+      0xa0522d:"sienna",
+      0xc0c0c0:"silver",
+      0x87ceeb:"skyblue",
+      0x6a5acd:"slateblue",
+      0x708090:"slategray",
+//      0x708090:"slategrey",
+      0xfffafa:"snow",
+      0x00ff7f:"springgreen",
+      0x4682b4:"steelblue",
+      0xd2b48c:"tan",
+      0x008080:"teal",
+      0xd8bfd8:"thistle",
+      0xff6347:"tomato",
+      0x40e0d0:"turquoise",
+      0xee82ee:"violet",
+      0xf5deb3:"wheat",
+      0xffffff:"white",
+      0xf5f5f5:"whitesmoke",
+      0xffff00:"yellow",
+      0x9acd32:"yellowgreen"
+    ]
+  }
+  static var mapNameToValue:[String:UInt32] {
     return [
              "aliceblue":0xf0f8ff,
              "antiquewhite":0xfaebd7,
@@ -44,7 +189,7 @@ extension Color {
              "darkgoldenrod":0xb8860b,
              "darkgray":0xa9a9a9,
              "darkgreen":0x006400,
-             "darkgrey":0xa9a9a9,
+//             "darkgrey":0xa9a9a9,
              "darkkhaki":0xbdb76b,
              "darkmagenta":0x8b008b,
              "darkolivegreen":0x556b2f,
@@ -55,13 +200,13 @@ extension Color {
              "darkseagreen":0x8fbc8f,
              "darkslateblue":0x483d8b,
              "darkslategray":0x2f4f4f,
-             "darkslategrey":0x2f4f4f,
+//             "darkslategrey":0x2f4f4f,
              "darkturquoise":0x00ced1,
              "darkviolet":0x9400d3,
              "deeppink":0xff1493,
              "deepskyblue":0x00bfff,
              "dimgray":0x696969,
-             "dimgrey":0x696969,
+//             "dimgrey":0x696969,
              "dodgerblue":0x1e90ff,
              "firebrick":0xb22222,
              "floralwhite":0xfffaf0,
@@ -74,7 +219,7 @@ extension Color {
              "gray":0x808080,
              "green":0x008000,
              "greenyellow":0xadff2f,
-             "grey":0x808080,
+//             "grey":0x808080,
              "honeydew":0xf0fff0,
              "hotpink":0xff69b4,
              "indianred":0xcd5c5c,
@@ -91,13 +236,13 @@ extension Color {
              "lightgoldenrodyellow":0xfafad2,
              "lightgray":0xd3d3d3,
              "lightgreen":0x90ee90,
-             "lightgrey":0xd3d3d3,
+//             "lightgrey":0xd3d3d3,
              "lightpink":0xffb6c1,
              "lightsalmon":0xffa07a,
              "lightseagreen":0x20b2aa,
              "lightskyblue":0x87cefa,
              "lightslategray":0x778899,
-             "lightslategrey":0x778899,
+//             "lightslategrey":0x778899,
              "lightsteelblue":0xb0c4de,
              "lightyellow":0xffffe0,
              "lime":0x00ff00,
@@ -151,7 +296,7 @@ extension Color {
              "skyblue":0x87ceeb,
              "slateblue":0x6a5acd,
              "slategray":0x708090,
-             "slategrey":0x708090,
+//             "slategrey":0x708090,
              "snow":0xfffafa,
              "springgreen":0x00ff7f,
              "steelblue":0x4682b4,
@@ -170,7 +315,7 @@ extension Color {
   }
 }
 
-extension Color {
+public extension Color {
   init(red: Int, green: Int, blue: Int) {
     self.init(red: Double(red)/256, green: Double(green)/256, blue: Double(blue)/256)
   }
@@ -181,7 +326,7 @@ extension Color {
     let bValue:UInt32 = (hex >> 0) & last16
     self.init(.sRGB, red: Double(rValue)/256, green: Double(gValue)/256, blue: Double(bValue)/256, opacity: 1.0)
   }
-  enum AdditionalColors: UInt32{
+  enum AdditionalColors: UInt32, CaseIterable{
     case aliceblue = 0xf0f8ff
     case antiquewhite = 0xfaebd7
 //    case aqua = 0x00ffff   // conflict with Cyan
@@ -332,156 +477,154 @@ extension Color {
     case yellowgreen = 0x9acd32
   }
   
-//  public static let Silver = Color(.sRGB, red: 192/256, green: 192/256, blue: 192/256, opacity: 1.0)
-//  public static let Silver = Color(red: 0xC0, green: 0xC0, blue: 0xC0)
-  public static let Aliceblue = Color(hex:AdditionalColors.aliceblue.rawValue)
-  public static let Antiquewhite = Color(hex:AdditionalColors.antiquewhite.rawValue)
-//  public static let Aqua = Color(hex:AdditionalColors.aqua.rawValue)
-  public static let Aquamarine = Color(hex:AdditionalColors.aquamarine.rawValue)
-  public static let Azure = Color(hex:AdditionalColors.azure.rawValue)
-  public static let Beige = Color(hex:AdditionalColors.beige.rawValue)
-  public static let Bisque = Color(hex:AdditionalColors.bisque.rawValue)
-  public static let Black = Color(hex:AdditionalColors.black.rawValue)
-  public static let Blanchedalmond = Color(hex:AdditionalColors.blanchedalmond.rawValue)
-  public static let Blue = Color(hex:AdditionalColors.blue.rawValue)
-  public static let Blueviolet = Color(hex:AdditionalColors.blueviolet.rawValue)
-  public static let Brown = Color(hex:AdditionalColors.brown.rawValue)
-  public static let Burlywood = Color(hex:AdditionalColors.burlywood.rawValue)
-  public static let Cadetblue = Color(hex:AdditionalColors.cadetblue.rawValue)
-  public static let Chartreuse = Color(hex:AdditionalColors.chartreuse.rawValue)
-  public static let Chocolate = Color(hex:AdditionalColors.chocolate.rawValue)
-  public static let Coral = Color(hex:AdditionalColors.coral.rawValue)
-  public static let Cornflowerblue = Color(hex:AdditionalColors.cornflowerblue.rawValue)
-  public static let Cornsilk = Color(hex:AdditionalColors.cornsilk.rawValue)
-  public static let Crimson = Color(hex:AdditionalColors.crimson.rawValue)
-  public static let Cyan = Color(hex:AdditionalColors.cyan.rawValue)
-  public static let Darkblue = Color(hex:AdditionalColors.darkblue.rawValue)
-  public static let Darkcyan = Color(hex:AdditionalColors.darkcyan.rawValue)
-  public static let Darkgoldenrod = Color(hex:AdditionalColors.darkgoldenrod.rawValue)
-  public static let Darkgray = Color(hex:AdditionalColors.darkgray.rawValue)
-  public static let Darkgreen = Color(hex:AdditionalColors.darkgreen.rawValue)
-//  public static let Darkgrey = Color(hex:AdditionalColors.darkgrey.rawValue)
-  public static let Darkkhaki = Color(hex:AdditionalColors.darkkhaki.rawValue)
-  public static let Darkmagenta = Color(hex:AdditionalColors.darkmagenta.rawValue)
-  public static let Darkolivegreen = Color(hex:AdditionalColors.darkolivegreen.rawValue)
-  public static let Darkorange = Color(hex:AdditionalColors.darkorange.rawValue)
-  public static let Darkorchid = Color(hex:AdditionalColors.darkorchid.rawValue)
-  public static let Darkred = Color(hex:AdditionalColors.darkred.rawValue)
-  public static let Darksalmon = Color(hex:AdditionalColors.darksalmon.rawValue)
-  public static let Darkseagreen = Color(hex:AdditionalColors.darkseagreen.rawValue)
-  public static let Darkslateblue = Color(hex:AdditionalColors.darkslateblue.rawValue)
-  public static let Darkslategray = Color(hex:AdditionalColors.darkslategray.rawValue)
-//  public static let Darkslategrey = Color(hex:AdditionalColors.darkslategrey.rawValue)
-  public static let Darkturquoise = Color(hex:AdditionalColors.darkturquoise.rawValue)
-  public static let Darkviolet = Color(hex:AdditionalColors.darkviolet.rawValue)
-  public static let Deeppink = Color(hex:AdditionalColors.deeppink.rawValue)
-  public static let Deepskyblue = Color(hex:AdditionalColors.deepskyblue.rawValue)
-  public static let Dimgray = Color(hex:AdditionalColors.dimgray.rawValue)
-//  public static let Dimgrey = Color(hex:AdditionalColors.dimgrey.rawValue)
-  public static let Dodgerblue = Color(hex:AdditionalColors.dodgerblue.rawValue)
-  public static let Firebrick = Color(hex:AdditionalColors.firebrick.rawValue)
-  public static let Floralwhite = Color(hex:AdditionalColors.floralwhite.rawValue)
-  public static let Forestgreen = Color(hex:AdditionalColors.forestgreen.rawValue)
-//  public static let Fuchsia = Color(hex:AdditionalColors.fuchsia.rawValue)
-  public static let Gainsboro = Color(hex:AdditionalColors.gainsboro.rawValue)
-  public static let Ghostwhite = Color(hex:AdditionalColors.ghostwhite.rawValue)
-  public static let Gold = Color(hex:AdditionalColors.gold.rawValue)
-  public static let Goldenrod = Color(hex:AdditionalColors.goldenrod.rawValue)
-  public static let Gray = Color(hex:AdditionalColors.gray.rawValue)
-  public static let Green = Color(hex:AdditionalColors.green.rawValue)
-  public static let Greenyellow = Color(hex:AdditionalColors.greenyellow.rawValue)
-//  public static let Grey = Color(hex:AdditionalColors.grey.rawValue)
-  public static let Honeydew = Color(hex:AdditionalColors.honeydew.rawValue)
-  public static let Hotpink = Color(hex:AdditionalColors.hotpink.rawValue)
-  public static let Indianred = Color(hex:AdditionalColors.indianred.rawValue)
-  public static let Indigo = Color(hex:AdditionalColors.indigo.rawValue)
-  public static let Ivory = Color(hex:AdditionalColors.ivory.rawValue)
-  public static let Khaki = Color(hex:AdditionalColors.khaki.rawValue)
-  public static let Lavender = Color(hex:AdditionalColors.lavender.rawValue)
-  public static let Lavenderblush = Color(hex:AdditionalColors.lavenderblush.rawValue)
-  public static let Lawngreen = Color(hex:AdditionalColors.lawngreen.rawValue)
-  public static let Lemonchiffon = Color(hex:AdditionalColors.lemonchiffon.rawValue)
-  public static let Lightblue = Color(hex:AdditionalColors.lightblue.rawValue)
-  public static let Lightcoral = Color(hex:AdditionalColors.lightcoral.rawValue)
-  public static let Lightcyan = Color(hex:AdditionalColors.lightcyan.rawValue)
-  public static let Lightgoldenrodyellow = Color(hex:AdditionalColors.lightgoldenrodyellow.rawValue)
-  public static let Lightgray = Color(hex:AdditionalColors.lightgray.rawValue)
-  public static let Lightgreen = Color(hex:AdditionalColors.lightgreen.rawValue)
-//  public static let Lightgrey = Color(hex:AdditionalColors.lightgrey.rawValue)
-  public static let Lightpink = Color(hex:AdditionalColors.lightpink.rawValue)
-  public static let Lightsalmon = Color(hex:AdditionalColors.lightsalmon.rawValue)
-  public static let Lightseagreen = Color(hex:AdditionalColors.lightseagreen.rawValue)
-  public static let Lightskyblue = Color(hex:AdditionalColors.lightskyblue.rawValue)
-  public static let Lightslategray = Color(hex:AdditionalColors.lightslategray.rawValue)
-//  public static let Lightslategrey = Color(hex:AdditionalColors.lightslategrey.rawValue)
-  public static let Lightsteelblue = Color(hex:AdditionalColors.lightsteelblue.rawValue)
-  public static let Lightyellow = Color(hex:AdditionalColors.lightyellow.rawValue)
-  public static let Lime = Color(hex:AdditionalColors.lime.rawValue)
-  public static let Limegreen = Color(hex:AdditionalColors.limegreen.rawValue)
-  public static let Linen = Color(hex:AdditionalColors.linen.rawValue)
-  public static let Magenta = Color(hex:AdditionalColors.magenta.rawValue)
-  public static let Maroon = Color(hex:AdditionalColors.maroon.rawValue)
-  public static let Mediumaquamarine = Color(hex:AdditionalColors.mediumaquamarine.rawValue)
-  public static let Mediumblue = Color(hex:AdditionalColors.mediumblue.rawValue)
-  public static let Mediumorchid = Color(hex:AdditionalColors.mediumorchid.rawValue)
-  public static let Mediumpurple = Color(hex:AdditionalColors.mediumpurple.rawValue)
-  public static let Mediumseagreen = Color(hex:AdditionalColors.mediumseagreen.rawValue)
-  public static let Mediumslateblue = Color(hex:AdditionalColors.mediumslateblue.rawValue)
-  public static let Mediumspringgreen = Color(hex:AdditionalColors.mediumspringgreen.rawValue)
-  public static let Mediumturquoise = Color(hex:AdditionalColors.mediumturquoise.rawValue)
-  public static let Mediumvioletred = Color(hex:AdditionalColors.mediumvioletred.rawValue)
-  public static let Midnightblue = Color(hex:AdditionalColors.midnightblue.rawValue)
-  public static let Mintcream = Color(hex:AdditionalColors.mintcream.rawValue)
-  public static let Mistyrose = Color(hex:AdditionalColors.mistyrose.rawValue)
-  public static let Moccasin = Color(hex:AdditionalColors.moccasin.rawValue)
-  public static let Navajowhite = Color(hex:AdditionalColors.navajowhite.rawValue)
-  public static let Navy = Color(hex:AdditionalColors.navy.rawValue)
-  public static let Oldlace = Color(hex:AdditionalColors.oldlace.rawValue)
-  public static let Olive = Color(hex:AdditionalColors.olive.rawValue)
-  public static let Olivedrab = Color(hex:AdditionalColors.olivedrab.rawValue)
-  public static let Orange = Color(hex:AdditionalColors.orange.rawValue)
-  public static let Orangered = Color(hex:AdditionalColors.orangered.rawValue)
-  public static let Orchid = Color(hex:AdditionalColors.orchid.rawValue)
-  public static let Palegoldenrod = Color(hex:AdditionalColors.palegoldenrod.rawValue)
-  public static let Palegreen = Color(hex:AdditionalColors.palegreen.rawValue)
-  public static let Paleturquoise = Color(hex:AdditionalColors.paleturquoise.rawValue)
-  public static let Palevioletred = Color(hex:AdditionalColors.palevioletred.rawValue)
-  public static let Papayawhip = Color(hex:AdditionalColors.papayawhip.rawValue)
-  public static let Peachpuff = Color(hex:AdditionalColors.peachpuff.rawValue)
-  public static let Peru = Color(hex:AdditionalColors.peru.rawValue)
-  public static let Pink = Color(hex:AdditionalColors.pink.rawValue)
-  public static let Plum = Color(hex:AdditionalColors.plum.rawValue)
-  public static let Powderblue = Color(hex:AdditionalColors.powderblue.rawValue)
-  public static let Purple = Color(hex:AdditionalColors.purple.rawValue)
-  public static let Rebeccapurple = Color(hex:AdditionalColors.rebeccapurple.rawValue)
-  public static let Red = Color(hex:AdditionalColors.red.rawValue)
-  public static let Rosybrown = Color(hex:AdditionalColors.rosybrown.rawValue)
-  public static let Royalblue = Color(hex:AdditionalColors.royalblue.rawValue)
-  public static let Saddlebrown = Color(hex:AdditionalColors.saddlebrown.rawValue)
-  public static let Salmon = Color(hex:AdditionalColors.salmon.rawValue)
-  public static let Sandybrown = Color(hex:AdditionalColors.sandybrown.rawValue)
-  public static let Seagreen = Color(hex:AdditionalColors.seagreen.rawValue)
-  public static let Seashell = Color(hex:AdditionalColors.seashell.rawValue)
-  public static let Sienna = Color(hex:AdditionalColors.sienna.rawValue)
-  public static let Silver = Color(hex:AdditionalColors.silver.rawValue)
-  public static let Skyblue = Color(hex:AdditionalColors.skyblue.rawValue)
-  public static let Slateblue = Color(hex:AdditionalColors.slateblue.rawValue)
-  public static let Slategray = Color(hex:AdditionalColors.slategray.rawValue)
-//  public static let Slategrey = Color(hex:AdditionalColors.slategrey.rawValue)
-  public static let Snow = Color(hex:AdditionalColors.snow.rawValue)
-  public static let Springgreen = Color(hex:AdditionalColors.springgreen.rawValue)
-  public static let Steelblue = Color(hex:AdditionalColors.steelblue.rawValue)
-  public static let Tan = Color(hex:AdditionalColors.tan.rawValue)
-  public static let Teal = Color(hex:AdditionalColors.teal.rawValue)
-  public static let Thistle = Color(hex:AdditionalColors.thistle.rawValue)
-  public static let Tomato = Color(hex:AdditionalColors.tomato.rawValue)
-  public static let Turquoise = Color(hex:AdditionalColors.turquoise.rawValue)
-  public static let Violet = Color(hex:AdditionalColors.violet.rawValue)
-  public static let Wheat = Color(hex:AdditionalColors.wheat.rawValue)
-  public static let White = Color(hex:AdditionalColors.white.rawValue)
-  public static let Whitesmoke = Color(hex:AdditionalColors.whitesmoke.rawValue)
-  public static let Yellow = Color(hex:AdditionalColors.yellow.rawValue)
-  public static let Yellowgreen = Color(hex:AdditionalColors.yellowgreen.rawValue)
+  static let Aliceblue = Color(hex:AdditionalColors.aliceblue.rawValue)
+  static let Antiquewhite = Color(hex:AdditionalColors.antiquewhite.rawValue)
+//  static let Aqua = Color(hex:AdditionalColors.aqua.rawValue)
+  static let Aquamarine = Color(hex:AdditionalColors.aquamarine.rawValue)
+  static let Azure = Color(hex:AdditionalColors.azure.rawValue)
+  static let Beige = Color(hex:AdditionalColors.beige.rawValue)
+  static let Bisque = Color(hex:AdditionalColors.bisque.rawValue)
+  static let Black = Color(hex:AdditionalColors.black.rawValue)
+  static let Blanchedalmond = Color(hex:AdditionalColors.blanchedalmond.rawValue)
+  static let Blue = Color(hex:AdditionalColors.blue.rawValue)
+  static let Blueviolet = Color(hex:AdditionalColors.blueviolet.rawValue)
+  static let Brown = Color(hex:AdditionalColors.brown.rawValue)
+  static let Burlywood = Color(hex:AdditionalColors.burlywood.rawValue)
+  static let Cadetblue = Color(hex:AdditionalColors.cadetblue.rawValue)
+  static let Chartreuse = Color(hex:AdditionalColors.chartreuse.rawValue)
+  static let Chocolate = Color(hex:AdditionalColors.chocolate.rawValue)
+  static let Coral = Color(hex:AdditionalColors.coral.rawValue)
+  static let Cornflowerblue = Color(hex:AdditionalColors.cornflowerblue.rawValue)
+  static let Cornsilk = Color(hex:AdditionalColors.cornsilk.rawValue)
+  static let Crimson = Color(hex:AdditionalColors.crimson.rawValue)
+  static let Cyan = Color(hex:AdditionalColors.cyan.rawValue)
+  static let Darkblue = Color(hex:AdditionalColors.darkblue.rawValue)
+  static let Darkcyan = Color(hex:AdditionalColors.darkcyan.rawValue)
+  static let Darkgoldenrod = Color(hex:AdditionalColors.darkgoldenrod.rawValue)
+  static let Darkgray = Color(hex:AdditionalColors.darkgray.rawValue)
+  static let Darkgreen = Color(hex:AdditionalColors.darkgreen.rawValue)
+//  static let Darkgrey = Color(hex:AdditionalColors.darkgrey.rawValue)
+  static let Darkkhaki = Color(hex:AdditionalColors.darkkhaki.rawValue)
+  static let Darkmagenta = Color(hex:AdditionalColors.darkmagenta.rawValue)
+  static let Darkolivegreen = Color(hex:AdditionalColors.darkolivegreen.rawValue)
+  static let Darkorange = Color(hex:AdditionalColors.darkorange.rawValue)
+  static let Darkorchid = Color(hex:AdditionalColors.darkorchid.rawValue)
+  static let Darkred = Color(hex:AdditionalColors.darkred.rawValue)
+  static let Darksalmon = Color(hex:AdditionalColors.darksalmon.rawValue)
+  static let Darkseagreen = Color(hex:AdditionalColors.darkseagreen.rawValue)
+  static let Darkslateblue = Color(hex:AdditionalColors.darkslateblue.rawValue)
+  static let Darkslategray = Color(hex:AdditionalColors.darkslategray.rawValue)
+//  static let Darkslategrey = Color(hex:AdditionalColors.darkslategrey.rawValue)
+  static let Darkturquoise = Color(hex:AdditionalColors.darkturquoise.rawValue)
+  static let Darkviolet = Color(hex:AdditionalColors.darkviolet.rawValue)
+  static let Deeppink = Color(hex:AdditionalColors.deeppink.rawValue)
+  static let Deepskyblue = Color(hex:AdditionalColors.deepskyblue.rawValue)
+  static let Dimgray = Color(hex:AdditionalColors.dimgray.rawValue)
+//  static let Dimgrey = Color(hex:AdditionalColors.dimgrey.rawValue)
+  static let Dodgerblue = Color(hex:AdditionalColors.dodgerblue.rawValue)
+  static let Firebrick = Color(hex:AdditionalColors.firebrick.rawValue)
+  static let Floralwhite = Color(hex:AdditionalColors.floralwhite.rawValue)
+  static let Forestgreen = Color(hex:AdditionalColors.forestgreen.rawValue)
+//  static let Fuchsia = Color(hex:AdditionalColors.fuchsia.rawValue)
+  static let Gainsboro = Color(hex:AdditionalColors.gainsboro.rawValue)
+  static let Ghostwhite = Color(hex:AdditionalColors.ghostwhite.rawValue)
+  static let Gold = Color(hex:AdditionalColors.gold.rawValue)
+  static let Goldenrod = Color(hex:AdditionalColors.goldenrod.rawValue)
+  static let Gray = Color(hex:AdditionalColors.gray.rawValue)
+  static let Green = Color(hex:AdditionalColors.green.rawValue)
+  static let Greenyellow = Color(hex:AdditionalColors.greenyellow.rawValue)
+//  static let Grey = Color(hex:AdditionalColors.grey.rawValue)
+  static let Honeydew = Color(hex:AdditionalColors.honeydew.rawValue)
+  static let Hotpink = Color(hex:AdditionalColors.hotpink.rawValue)
+  static let Indianred = Color(hex:AdditionalColors.indianred.rawValue)
+  static let Indigo = Color(hex:AdditionalColors.indigo.rawValue)
+  static let Ivory = Color(hex:AdditionalColors.ivory.rawValue)
+  static let Khaki = Color(hex:AdditionalColors.khaki.rawValue)
+  static let Lavender = Color(hex:AdditionalColors.lavender.rawValue)
+  static let Lavenderblush = Color(hex:AdditionalColors.lavenderblush.rawValue)
+  static let Lawngreen = Color(hex:AdditionalColors.lawngreen.rawValue)
+  static let Lemonchiffon = Color(hex:AdditionalColors.lemonchiffon.rawValue)
+  static let Lightblue = Color(hex:AdditionalColors.lightblue.rawValue)
+  static let Lightcoral = Color(hex:AdditionalColors.lightcoral.rawValue)
+  static let Lightcyan = Color(hex:AdditionalColors.lightcyan.rawValue)
+  static let Lightgoldenrodyellow = Color(hex:AdditionalColors.lightgoldenrodyellow.rawValue)
+  static let Lightgray = Color(hex:AdditionalColors.lightgray.rawValue)
+  static let Lightgreen = Color(hex:AdditionalColors.lightgreen.rawValue)
+//  static let Lightgrey = Color(hex:AdditionalColors.lightgrey.rawValue)
+  static let Lightpink = Color(hex:AdditionalColors.lightpink.rawValue)
+  static let Lightsalmon = Color(hex:AdditionalColors.lightsalmon.rawValue)
+  static let Lightseagreen = Color(hex:AdditionalColors.lightseagreen.rawValue)
+  static let Lightskyblue = Color(hex:AdditionalColors.lightskyblue.rawValue)
+  static let Lightslategray = Color(hex:AdditionalColors.lightslategray.rawValue)
+//  static let Lightslategrey = Color(hex:AdditionalColors.lightslategrey.rawValue)
+  static let Lightsteelblue = Color(hex:AdditionalColors.lightsteelblue.rawValue)
+  static let Lightyellow = Color(hex:AdditionalColors.lightyellow.rawValue)
+  static let Lime = Color(hex:AdditionalColors.lime.rawValue)
+  static let Limegreen = Color(hex:AdditionalColors.limegreen.rawValue)
+  static let Linen = Color(hex:AdditionalColors.linen.rawValue)
+  static let Magenta = Color(hex:AdditionalColors.magenta.rawValue)
+  static let Maroon = Color(hex:AdditionalColors.maroon.rawValue)
+  static let Mediumaquamarine = Color(hex:AdditionalColors.mediumaquamarine.rawValue)
+  static let Mediumblue = Color(hex:AdditionalColors.mediumblue.rawValue)
+  static let Mediumorchid = Color(hex:AdditionalColors.mediumorchid.rawValue)
+  static let Mediumpurple = Color(hex:AdditionalColors.mediumpurple.rawValue)
+  static let Mediumseagreen = Color(hex:AdditionalColors.mediumseagreen.rawValue)
+  static let Mediumslateblue = Color(hex:AdditionalColors.mediumslateblue.rawValue)
+  static let Mediumspringgreen = Color(hex:AdditionalColors.mediumspringgreen.rawValue)
+  static let Mediumturquoise = Color(hex:AdditionalColors.mediumturquoise.rawValue)
+  static let Mediumvioletred = Color(hex:AdditionalColors.mediumvioletred.rawValue)
+  static let Midnightblue = Color(hex:AdditionalColors.midnightblue.rawValue)
+  static let Mintcream = Color(hex:AdditionalColors.mintcream.rawValue)
+  static let Mistyrose = Color(hex:AdditionalColors.mistyrose.rawValue)
+  static let Moccasin = Color(hex:AdditionalColors.moccasin.rawValue)
+  static let Navajowhite = Color(hex:AdditionalColors.navajowhite.rawValue)
+  static let Navy = Color(hex:AdditionalColors.navy.rawValue)
+  static let Oldlace = Color(hex:AdditionalColors.oldlace.rawValue)
+  static let Olive = Color(hex:AdditionalColors.olive.rawValue)
+  static let Olivedrab = Color(hex:AdditionalColors.olivedrab.rawValue)
+  static let Orange = Color(hex:AdditionalColors.orange.rawValue)
+  static let Orangered = Color(hex:AdditionalColors.orangered.rawValue)
+  static let Orchid = Color(hex:AdditionalColors.orchid.rawValue)
+  static let Palegoldenrod = Color(hex:AdditionalColors.palegoldenrod.rawValue)
+  static let Palegreen = Color(hex:AdditionalColors.palegreen.rawValue)
+  static let Paleturquoise = Color(hex:AdditionalColors.paleturquoise.rawValue)
+  static let Palevioletred = Color(hex:AdditionalColors.palevioletred.rawValue)
+  static let Papayawhip = Color(hex:AdditionalColors.papayawhip.rawValue)
+  static let Peachpuff = Color(hex:AdditionalColors.peachpuff.rawValue)
+  static let Peru = Color(hex:AdditionalColors.peru.rawValue)
+  static let Pink = Color(hex:AdditionalColors.pink.rawValue)
+  static let Plum = Color(hex:AdditionalColors.plum.rawValue)
+  static let Powderblue = Color(hex:AdditionalColors.powderblue.rawValue)
+  static let Purple = Color(hex:AdditionalColors.purple.rawValue)
+  static let Rebeccapurple = Color(hex:AdditionalColors.rebeccapurple.rawValue)
+  static let Red = Color(hex:AdditionalColors.red.rawValue)
+  static let Rosybrown = Color(hex:AdditionalColors.rosybrown.rawValue)
+  static let Royalblue = Color(hex:AdditionalColors.royalblue.rawValue)
+  static let Saddlebrown = Color(hex:AdditionalColors.saddlebrown.rawValue)
+  static let Salmon = Color(hex:AdditionalColors.salmon.rawValue)
+  static let Sandybrown = Color(hex:AdditionalColors.sandybrown.rawValue)
+  static let Seagreen = Color(hex:AdditionalColors.seagreen.rawValue)
+  static let Seashell = Color(hex:AdditionalColors.seashell.rawValue)
+  static let Sienna = Color(hex:AdditionalColors.sienna.rawValue)
+  static let Silver = Color(hex:AdditionalColors.silver.rawValue)
+  static let Skyblue = Color(hex:AdditionalColors.skyblue.rawValue)
+  static let Slateblue = Color(hex:AdditionalColors.slateblue.rawValue)
+  static let Slategray = Color(hex:AdditionalColors.slategray.rawValue)
+//  static let Slategrey = Color(hex:AdditionalColors.slategrey.rawValue)
+  static let Snow = Color(hex:AdditionalColors.snow.rawValue)
+  static let Springgreen = Color(hex:AdditionalColors.springgreen.rawValue)
+  static let Steelblue = Color(hex:AdditionalColors.steelblue.rawValue)
+  static let Tan = Color(hex:AdditionalColors.tan.rawValue)
+  static let Teal = Color(hex:AdditionalColors.teal.rawValue)
+  static let Thistle = Color(hex:AdditionalColors.thistle.rawValue)
+  static let Tomato = Color(hex:AdditionalColors.tomato.rawValue)
+  static let Turquoise = Color(hex:AdditionalColors.turquoise.rawValue)
+  static let Violet = Color(hex:AdditionalColors.violet.rawValue)
+  static let Wheat = Color(hex:AdditionalColors.wheat.rawValue)
+  static let White = Color(hex:AdditionalColors.white.rawValue)
+  static let Whitesmoke = Color(hex:AdditionalColors.whitesmoke.rawValue)
+  static let Yellow = Color(hex:AdditionalColors.yellow.rawValue)
+  static let Yellowgreen = Color(hex:AdditionalColors.yellowgreen.rawValue)
 
 }
 
