@@ -38,7 +38,7 @@ struct ContentView_Previews: PreviewProvider {
 
 ## where comes from?
 
-color name and RGB comes from https://www.w3.org/TR/css-color-4/#named-colors
+color name and RGB values comes from https://www.w3.org/TR/css-color-4/#named-colors
 
 ## any restriction?
 to prevent duplicate key, following colors are disabled.
@@ -49,6 +49,150 @@ to prevent duplicate key, following colors are disabled.
   - use Cyan
 - Fuchsia
   - use Magenta
+  
+## Note: SwiftUI definition is different from this extension
+You can use Color.red (comes from SwiftUI) and Color.Red (comes from this extension) even both means same color.
+
+## Color Name list
+1. Aliceblue
+1. Antiquewhite
+1. Aquamarine
+1. Azure
+1. Beige
+1. Bisque
+1. Black
+1. Blanchedalmond
+1. Blue
+1. Blueviolet
+1. Brown
+1. Burlywood
+1. Cadetblue
+1. Chartreuse
+1. Chocolate
+1. Coral
+1. Cornflowerblue
+1. Cornsilk
+1. Crimson
+1. Cyan
+1. Darkblue
+1. Darkcyan
+1. Darkgoldenrod
+1. Darkgray
+1. Darkgreen
+1. Darkkhaki
+1. Darkmagenta
+1. Darkolivegreen
+1. Darkorange
+1. Darkorchid
+1. Darkred
+1. Darksalmon
+1. Darkseagreen
+1. Darkslateblue
+1. Darkslategray
+1. Darkturquoise
+1. Darkviolet
+1. Deeppink
+1. Deepskyblue
+1. Dimgray
+1. Dodgerblue
+1. Firebrick
+1. Floralwhite
+1. Forestgreen
+1. Gainsboro
+1. Ghostwhite
+1. Gold
+1. Goldenrod
+1. Gray
+1. Green
+1. Greenyellow
+1. Honeydew
+1. Hotpink
+1. Indianred
+1. Indigo
+1. Ivory
+1. Khaki
+1. Lavender
+1. Lavenderblush
+1. Lawngreen
+1. Lemonchiffon
+1. Lightblue
+1. Lightcoral
+1. Lightcyan
+1. Lightgoldenrodyellow
+1. Lightgray
+1. Lightgreen
+1. Lightpink
+1. Lightsalmon
+1. Lightseagreen
+1. Lightskyblue
+1. Lightslategray
+1. Lightsteelblue
+1. Lightyellow
+1. Lime
+1. Limegreen
+1. Linen
+1. Magenta
+1. Maroon
+1. Mediumaquamarine
+1. Mediumblue
+1. Mediumorchid
+1. Mediumpurple
+1. Mediumseagreen
+1. Mediumslateblue
+1. Mediumspringgreen
+1. Mediumturquoise
+1. Mediumvioletred
+1. Midnightblue
+1. Mintcream
+1. Mistyrose
+1. Moccasin
+1. Navajowhite
+1. Navy
+1. Oldlace
+1. Olive
+1. Olivedrab
+1. Orange
+1. Orangered
+1. Orchid
+1. Palegoldenrod
+1. Palegreen
+1. Paleturquoise
+1. Palevioletred
+1. Papayawhip
+1. Peachpuff
+1. Peru
+1. Pink
+1. Plum
+1. Powderblue
+1. Purple
+1. Rebeccapurple
+1. Red
+1. Rosybrown
+1. Royalblue
+1. Saddlebrown
+1. Salmon
+1. Sandybrown
+1. Seagreen
+1. Seashell
+1. Sienna
+1. Silver
+1. Skyblue
+1. Slateblue
+1. Slategray
+1. Snow
+1. Springgreen
+1. Steelblue
+1. Tan
+1. Teal
+1. Thistle
+1. Tomato
+1. Turquoise
+1. Violet
+1. Wheat
+1. White
+1. Whitesmoke
+1. Yellow
+1. Yellowgreen
 
 
 
