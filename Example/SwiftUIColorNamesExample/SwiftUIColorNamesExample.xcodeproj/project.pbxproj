@@ -12,6 +12,7 @@
 		360F67832643DC72005014F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360F67822643DC72005014F7 /* Preview Assets.xcassets */; };
 		360F678F2643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360F678E2643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests.swift */; };
 		360F67A62643DCAF005014F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36742C4A254410090073DC56 /* ContentView.swift */; };
+		360F67AB26440B93005014F7 /* SwiftUIColorNames in Frameworks */ = {isa = PBXBuildFile; productRef = 360F67AA26440B93005014F7 /* SwiftUIColorNames */; };
 		36742C49254410090073DC56 /* SwiftUIColorNamesExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36742C48254410090073DC56 /* SwiftUIColorNamesExampleApp.swift */; };
 		36742C4B254410090073DC56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36742C4A254410090073DC56 /* ContentView.swift */; };
 		36742C4D2544100A0073DC56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36742C4C2544100A0073DC56 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				360F67AB26440B93005014F7 /* SwiftUIColorNames in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +177,7 @@
 			);
 			name = SwiftUIColorNamesMacOSExample;
 			packageProductDependencies = (
+				360F67AA26440B93005014F7 /* SwiftUIColorNames */,
 			);
 			productName = SwiftUIColorNamesMacOSExample;
 			productReference = 360F67792643DC71005014F7 /* SwiftUIColorNamesMacOSExample.app */;
@@ -637,6 +640,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		360F67AA26440B93005014F7 /* SwiftUIColorNames */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 36742C58254410400073DC56 /* XCRemoteSwiftPackageReference "SwiftUIColorNames" */;
+			productName = SwiftUIColorNames;
+		};
 		36742C59254410400073DC56 /* SwiftUIColorNames */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 36742C58254410400073DC56 /* XCRemoteSwiftPackageReference "SwiftUIColorNames" */;
