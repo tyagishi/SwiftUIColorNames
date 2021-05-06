@@ -59,8 +59,7 @@ let colorName = ApplePalletColorMapNameToValue[anotherRgbValue] ?? "undefined in
 ```
 
 
-Note: what is "ColorPallet/Apple"?
-here.
+Note: what is "ColorPallet/Apple"? -> please refer to followings.
 ![screen capture](https://user-images.githubusercontent.com/6419800/117290684-103be980-aea9-11eb-9ca3-2679c813f177.png)
 
 note: Colors in "ColorPallet Apple" is different from SwiftUI Colors.
