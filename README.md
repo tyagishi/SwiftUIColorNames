@@ -68,7 +68,7 @@ note: Colors in "ColorPallet Apple" is different from SwiftUI Colors.
 ### W3CColorMapValueToName, W3CColorMapNameToValue
 convert between "W3C named color" to "RGB values" like
 ```
-let rgbValue: UInt32 = W3CColorMapNameToValue["Brown"]
+let rgbValue: UInt32 = W3CColorMapNameToValue["brown"]
 let anotherRgbValue = ...
 let colorName = W3CColorMapValueToName[anotherRgbValue] ?? "undefined in W3C"
 ```
