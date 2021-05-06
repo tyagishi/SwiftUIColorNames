@@ -4,7 +4,7 @@ convenient extension for using SwiftUI Color
 
 ## screen capture (of example app)
 
-![screen capture](https://user-images.githubusercontent.com/6419800/97071300-6981b100-161a-11eb-8b94-6349b5143f10.png | width = 200)
+![screen capture](https://user-images.githubusercontent.com/6419800/97071300-6981b100-161a-11eb-8b94-6349b5143f10.png | width=200)
 
 ## example app/code
 ~~~
