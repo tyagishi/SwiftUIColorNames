@@ -43,7 +43,8 @@ You can specify the color with its name (in W3C/ApplePalletColor) like
 let favoriteColor = Color.gold                // :)
 let nextFavColor = Color.ApplePalletBrown
 ```
-Note: to avoid name conflict with SwiftUI, name of all W3C colors starts with lowercase character. )
+Note: to avoid name conflict with SwiftUI, name of all W3C colors starts with lowercase character. 
+
 for color in apple pallet, it starts with "ApplePallet" prefix.
 
 ### able to convert between "color name" and "its RGB value"
