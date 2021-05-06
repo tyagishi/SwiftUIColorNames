@@ -4,7 +4,7 @@ convenient extension for using SwiftUI Color
 
 ## screen capture (of example app)
 
-![screen capture](https://user-images.githubusercontent.com/6419800/97071300-6981b100-161a-11eb-8b94-6349b5143f10.png)
+![screen capture](https://user-images.githubusercontent.com/6419800/97071300-6981b100-161a-11eb-8b94-6349b5143f10.png | height = 300)
 
 ## example app/code
 ~~~
@@ -60,9 +60,8 @@ let colorName = ApplePalletColorMapNameToValue[anotherRgbValue] ?? "undefined in
 
 
 Note: what is "ColorPallet/Apple"?
-colors in the color picker
-
--- image will come --
+here.
+![screen capture](https://user-images.githubusercontent.com/6419800/117290684-103be980-aea9-11eb-9ca3-2679c813f177.png)
 
 note: Colors in "ColorPallet Apple" is different from SwiftUI Colors.
 
