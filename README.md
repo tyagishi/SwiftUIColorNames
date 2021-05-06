@@ -36,6 +36,44 @@ struct ContentView_Previews: PreviewProvider {
 }
 ~~~
 
+## Main functionalities
+### use color with name
+You can specify the color with its name (in W3C/ApplePalletColor) like 
+```
+let favoriteColor = Color.gold                // :)
+let nextFavColor = Color.ApplePalletBrown
+```
+Note: to avoid name conflict with SwiftUI, name of all W3C colors starts with lowercase character. )
+for color in apple pallet, it starts with "ApplePallet" prefix.
+
+### able to convert between "color name" and "its RGB value"
+
+2 dictionaries are there.
+
+#### ApplePalletColorMapValueToName, ApplePalletColorMapNameToValue
+convert between "ColorPallet/Apple" to "RGB values" like
+```
+let rgbValue: UInt32 = ApplePalletColorMapNameToValue["Brown"]
+let anotherRgbValue = ...
+let colorName = ApplePalletColorMapNameToValue[anotherRgbValue] ?? "undefined in pallet"
+```
+
+
+Note: what is "ColorPallet/Apple"?
+colors in the color picker
+
+-- image will come --
+
+note: Colors in "ColorPallet Apple" is different from SwiftUI Colors.
+
+### W3CColorMapValueToName, W3CColorMapNameToValue
+convert between "W3C named color" to "RGB values" like
+```
+let rgbValue: UInt32 = W3CColorMapNameToValue["Brown"]
+let anotherRgbValue = ...
+let colorName = W3CColorMapValueToName[anotherRgbValue] ?? "undefined in W3C"
+```
+
 ## where comes from?
 
 color name and RGB values comes from https://www.w3.org/TR/css-color-4/#named-colors

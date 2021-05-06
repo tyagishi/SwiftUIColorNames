@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360F677C2643DC71005014F7 /* SwiftUIColorNamesMacOSExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360F677B2643DC71005014F7 /* SwiftUIColorNamesMacOSExampleApp.swift */; };
+		360F67802643DC72005014F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360F677F2643DC72005014F7 /* Assets.xcassets */; };
+		360F67832643DC72005014F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360F67822643DC72005014F7 /* Preview Assets.xcassets */; };
+		360F678F2643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360F678E2643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests.swift */; };
+		360F67A62643DCAF005014F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36742C4A254410090073DC56 /* ContentView.swift */; };
+		360F67A92643DCDE005014F7 /* SwiftUIColorNames in Frameworks */ = {isa = PBXBuildFile; productRef = 360F67A82643DCDE005014F7 /* SwiftUIColorNames */; };
 		36742C49254410090073DC56 /* SwiftUIColorNamesExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36742C48254410090073DC56 /* SwiftUIColorNamesExampleApp.swift */; };
 		36742C4B254410090073DC56 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36742C4A254410090073DC56 /* ContentView.swift */; };
 		36742C4D2544100A0073DC56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36742C4C2544100A0073DC56 /* Assets.xcassets */; };
@@ -14,7 +20,26 @@
 		36742C5A254410400073DC56 /* SwiftUIColorNames in Frameworks */ = {isa = PBXBuildFile; productRef = 36742C59254410400073DC56 /* SwiftUIColorNames */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		360F678B2643DC72005014F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 36742C3D254410090073DC56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 360F67782643DC71005014F7;
+			remoteInfo = SwiftUIColorNamesMacOSExample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		360F67792643DC71005014F7 /* SwiftUIColorNamesMacOSExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIColorNamesMacOSExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		360F677B2643DC71005014F7 /* SwiftUIColorNamesMacOSExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIColorNamesMacOSExampleApp.swift; sourceTree = "<group>"; };
+		360F677F2643DC72005014F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		360F67822643DC72005014F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		360F67842643DC72005014F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		360F67852643DC72005014F7 /* SwiftUIColorNamesMacOSExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUIColorNamesMacOSExample.entitlements; sourceTree = "<group>"; };
+		360F678A2643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIColorNamesMacOSExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		360F678E2643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIColorNamesMacOSExampleTests.swift; sourceTree = "<group>"; };
+		360F67902643DC72005014F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		36742C45254410090073DC56 /* SwiftUIColorNamesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIColorNamesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36742C48254410090073DC56 /* SwiftUIColorNamesExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIColorNamesExampleApp.swift; sourceTree = "<group>"; };
 		36742C4A254410090073DC56 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +49,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		360F67762643DC71005014F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360F67A92643DCDE005014F7 /* SwiftUIColorNames in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360F67872643DC72005014F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36742C42254410090073DC56 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,11 +75,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		360F677A2643DC71005014F7 /* SwiftUIColorNamesMacOSExample */ = {
+			isa = PBXGroup;
+			children = (
+				360F677B2643DC71005014F7 /* SwiftUIColorNamesMacOSExampleApp.swift */,
+				360F677F2643DC72005014F7 /* Assets.xcassets */,
+				360F67842643DC72005014F7 /* Info.plist */,
+				360F67852643DC72005014F7 /* SwiftUIColorNamesMacOSExample.entitlements */,
+				360F67812643DC72005014F7 /* Preview Content */,
+			);
+			path = SwiftUIColorNamesMacOSExample;
+			sourceTree = "<group>";
+		};
+		360F67812643DC72005014F7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				360F67822643DC72005014F7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		360F678D2643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				360F678E2643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests.swift */,
+				360F67902643DC72005014F7 /* Info.plist */,
+			);
+			path = SwiftUIColorNamesMacOSExampleTests;
+			sourceTree = "<group>";
+		};
+		360F67A52643DC90005014F7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				36742C4A254410090073DC56 /* ContentView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		360F67A72643DCDE005014F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		36742C3C254410090073DC56 = {
 			isa = PBXGroup;
 			children = (
+				360F67A52643DC90005014F7 /* Common */,
 				36742C47254410090073DC56 /* SwiftUIColorNamesExample */,
+				360F677A2643DC71005014F7 /* SwiftUIColorNamesMacOSExample */,
+				360F678D2643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests */,
 				36742C46254410090073DC56 /* Products */,
+				360F67A72643DCDE005014F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				36742C45254410090073DC56 /* SwiftUIColorNamesExample.app */,
+				360F67792643DC71005014F7 /* SwiftUIColorNamesMacOSExample.app */,
+				360F678A2643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				36742C48254410090073DC56 /* SwiftUIColorNamesExampleApp.swift */,
-				36742C4A254410090073DC56 /* ContentView.swift */,
 				36742C4C2544100A0073DC56 /* Assets.xcassets */,
 				36742C512544100A0073DC56 /* Info.plist */,
 				36742C4E2544100A0073DC56 /* Preview Content */,
@@ -74,6 +163,44 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		360F67782643DC71005014F7 /* SwiftUIColorNamesMacOSExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360F679C2643DC73005014F7 /* Build configuration list for PBXNativeTarget "SwiftUIColorNamesMacOSExample" */;
+			buildPhases = (
+				360F67752643DC71005014F7 /* Sources */,
+				360F67762643DC71005014F7 /* Frameworks */,
+				360F67772643DC71005014F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftUIColorNamesMacOSExample;
+			packageProductDependencies = (
+				360F67A82643DCDE005014F7 /* SwiftUIColorNames */,
+			);
+			productName = SwiftUIColorNamesMacOSExample;
+			productReference = 360F67792643DC71005014F7 /* SwiftUIColorNamesMacOSExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		360F67892643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360F679F2643DC73005014F7 /* Build configuration list for PBXNativeTarget "SwiftUIColorNamesMacOSExampleTests" */;
+			buildPhases = (
+				360F67862643DC72005014F7 /* Sources */,
+				360F67872643DC72005014F7 /* Frameworks */,
+				360F67882643DC72005014F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				360F678C2643DC72005014F7 /* PBXTargetDependency */,
+			);
+			name = SwiftUIColorNamesMacOSExampleTests;
+			productName = SwiftUIColorNamesMacOSExampleTests;
+			productReference = 360F678A2643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		36742C44254410090073DC56 /* SwiftUIColorNamesExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36742C542544100A0073DC56 /* Build configuration list for PBXNativeTarget "SwiftUIColorNamesExample" */;
@@ -100,9 +227,16 @@
 		36742C3D254410090073DC56 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1210;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					360F67782643DC71005014F7 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					360F67892643DC72005014F7 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 360F67782643DC71005014F7;
+					};
 					36742C44254410090073DC56 = {
 						CreatedOnToolsVersion = 12.1;
 					};
@@ -125,11 +259,29 @@
 			projectRoot = "";
 			targets = (
 				36742C44254410090073DC56 /* SwiftUIColorNamesExample */,
+				360F67782643DC71005014F7 /* SwiftUIColorNamesMacOSExample */,
+				360F67892643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		360F67772643DC71005014F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360F67832643DC72005014F7 /* Preview Assets.xcassets in Resources */,
+				360F67802643DC72005014F7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360F67882643DC72005014F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36742C43254410090073DC56 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -142,6 +294,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		360F67752643DC71005014F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360F67A62643DCAF005014F7 /* ContentView.swift in Sources */,
+				360F677C2643DC71005014F7 /* SwiftUIColorNamesMacOSExampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360F67862643DC72005014F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360F678F2643DC72005014F7 /* SwiftUIColorNamesMacOSExampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		36742C41254410090073DC56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,7 +322,111 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		360F678C2643DC72005014F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 360F67782643DC71005014F7 /* SwiftUIColorNamesMacOSExample */;
+			targetProxy = 360F678B2643DC72005014F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		360F679D2643DC73005014F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIColorNamesMacOSExample/SwiftUIColorNamesMacOSExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIColorNamesMacOSExample/Preview Content\"";
+				DEVELOPMENT_TEAM = QU378YD9WW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIColorNamesMacOSExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smalldesksoftware.SwiftUIColorNamesMacOSExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		360F679E2643DC73005014F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftUIColorNamesMacOSExample/SwiftUIColorNamesMacOSExample.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIColorNamesMacOSExample/Preview Content\"";
+				DEVELOPMENT_TEAM = QU378YD9WW;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SwiftUIColorNamesMacOSExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smalldesksoftware.SwiftUIColorNamesMacOSExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		360F67A02643DC73005014F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QU378YD9WW;
+				INFOPLIST_FILE = SwiftUIColorNamesMacOSExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smalldesksoftware.SwiftUIColorNamesMacOSExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIColorNamesMacOSExample.app/Contents/MacOS/SwiftUIColorNamesMacOSExample";
+			};
+			name = Debug;
+		};
+		360F67A12643DC73005014F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = QU378YD9WW;
+				INFOPLIST_FILE = SwiftUIColorNamesMacOSExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smalldesksoftware.SwiftUIColorNamesMacOSExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUIColorNamesMacOSExample.app/Contents/MacOS/SwiftUIColorNamesMacOSExample";
+			};
+			name = Release;
+		};
 		36742C522544100A0073DC56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -317,6 +590,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		360F679C2643DC73005014F7 /* Build configuration list for PBXNativeTarget "SwiftUIColorNamesMacOSExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360F679D2643DC73005014F7 /* Debug */,
+				360F679E2643DC73005014F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		360F679F2643DC73005014F7 /* Build configuration list for PBXNativeTarget "SwiftUIColorNamesMacOSExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360F67A02643DC73005014F7 /* Debug */,
+				360F67A12643DC73005014F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		36742C40254410090073DC56 /* Build configuration list for PBXProject "SwiftUIColorNamesExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -349,6 +640,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		360F67A82643DCDE005014F7 /* SwiftUIColorNames */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftUIColorNames;
+		};
 		36742C59254410400073DC56 /* SwiftUIColorNames */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 36742C58254410400073DC56 /* XCRemoteSwiftPackageReference "SwiftUIColorNames" */;
