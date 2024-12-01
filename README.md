@@ -43,7 +43,8 @@ You can specify the color with its name (in W3C/ApplePalletColor) like
 let favoriteColor = Color.gold                // :)
 let nextFavColor = Color.ApplePalletBrown
 ```
-Note: to avoid name conflict with SwiftUI, name of all W3C colors starts with lowercase character. )
+Note: to avoid name conflict with SwiftUI, name of all W3C colors starts with lowercase character. 
+
 for color in apple pallet, it starts with "ApplePallet" prefix.
 
 ### able to convert between "color name" and "its RGB value"
@@ -59,17 +60,15 @@ let colorName = ApplePalletColorMapNameToValue[anotherRgbValue] ?? "undefined in
 ```
 
 
-Note: what is "ColorPallet/Apple"?
-colors in the color picker
-
--- image will come --
+Note: what is "ColorPallet/Apple"? -> please refer to followings.
+![screen capture](https://user-images.githubusercontent.com/6419800/117290684-103be980-aea9-11eb-9ca3-2679c813f177.png)
 
 note: Colors in "ColorPallet Apple" is different from SwiftUI Colors.
 
 ### W3CColorMapValueToName, W3CColorMapNameToValue
 convert between "W3C named color" to "RGB values" like
 ```
-let rgbValue: UInt32 = W3CColorMapNameToValue["Brown"]
+let rgbValue: UInt32 = W3CColorMapNameToValue["brown"]
 let anotherRgbValue = ...
 let colorName = W3CColorMapValueToName[anotherRgbValue] ?? "undefined in W3C"
 ```
