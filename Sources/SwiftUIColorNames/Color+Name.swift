@@ -16,12 +16,28 @@ import UIKit
 typealias SysColor = UIColor
 #endif
 
+extension UInt32 {
+    init?(_ str: String, radix: Int) {
+        guard let intValue = Int(str, radix: radix) else { return nil }
+        self = UInt32(intValue)
+    }
+}
+
 public extension Color {
     init(hex: UInt32) {
         let last16 = UInt32(0xFF)
         let rValue:UInt32 = (hex >> 16) & last16
         let gValue:UInt32 = (hex >> 8) & last16
         let bValue:UInt32 = (hex >> 0) & last16
+        self.init(.sRGB, red: Double(rValue)/255, green: Double(gValue)/255, blue: Double(bValue)/255, opacity: 1.0)
+    }
+
+    init?(hexStr: String) {
+        guard hexStr.count == 8 else { return nil } // expect start with 0x like 0x0433ff
+        let startIndex = hexStr.startIndex
+        guard let rValue:UInt32 = UInt32(hexStr[hexStr.index(startIndex, offsetBy: 2)..<hexStr.index(startIndex, offsetBy: 4)], radix: 16),
+              let gValue:UInt32 = UInt32(hexStr[hexStr.index(startIndex, offsetBy: 4)..<hexStr.index(startIndex, offsetBy: 6)], radix: 16),
+              let bValue:UInt32 = UInt32(hexStr[hexStr.index(startIndex, offsetBy: 6)..<hexStr.index(startIndex, offsetBy: 8)], radix: 16) else { return nil }
         self.init(.sRGB, red: Double(rValue)/255, green: Double(gValue)/255, blue: Double(bValue)/255, opacity: 1.0)
     }
     
@@ -40,11 +56,25 @@ public extension Color {
         #endif
         return (UInt32(round(red * 255.0)), UInt32(round(green * 255.0)), UInt32(round(blue * 255.0)))
     }
+    
+    var rgbaIntValues: (r: UInt32, g: UInt32, b: UInt32, a: UInt32) {
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        #if os(macOS)
+        if let sysColor = SysColor(self).usingColorSpace(.deviceRGB) {
+            sysColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        }
+        #elseif os(iOS)
+        let sysColor = SysColor(self)
+        sysColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        #endif
+        return (UInt32(round(red * 255.0)), UInt32(round(green * 255.0)), UInt32(round(blue * 255.0)), UInt32(round(alpha * 255.0)))
+    }
 
     var rgbUInt32: UInt32 {
-        let red:UInt32 = self.rgbIntValues.r
-        let green:UInt32 = self.rgbIntValues.g
-        let blue:UInt32 = self.rgbIntValues.b
+        let (red, green, blue) = self.rgbIntValues
         return UInt32(red << 16 + green << 8 + blue)
     }
     

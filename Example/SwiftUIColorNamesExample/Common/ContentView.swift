@@ -10,6 +10,8 @@ import SwiftUIColorNames
 
 struct ContentView: View {
     @State private var colorToBeChecked = Color.white
+    let colorProviderApple = ColorProvider(.apple)
+    let colorProviderW3C = ColorProvider(.w3c)
     var body: some View {
         TabView {
 
@@ -42,6 +44,26 @@ struct ContentView: View {
                 }
             }
             .tabItem{ Text("Color Names") }
+            VStack {
+                List(0..<500, id:\.self) { index in
+                    let color = colorProviderApple.color(for: "\(index)")
+                    ZStack {
+                        Text(color.name)
+                        color.color.zIndex(-1)
+                    }
+                }
+            }
+            .tabItem{ Text("ColorProvider(Apple)") }
+            VStack {
+                List(0..<500, id:\.self) { index in
+                    let color = colorProviderW3C.color(for: "\(index)")
+                    ZStack {
+                        Text(color.name)
+                        color.color.zIndex(-1)
+                    }
+                }
+            }
+            .tabItem{ Text("ColorProvider(W3C)") }
         }
     }
 }
