@@ -9,7 +9,41 @@ import Foundation
 import SwiftUI
 
 extension Color {
-  static var mapValueToName:[UInt32:String] {
+    static public var ApplePalletColorMapValueToName:[UInt32:String] {
+        return [
+            0x000000: "Black",
+            0x0433ff: "Blue",
+            0xaa7942: "Brown",
+            0x00fdff: "Cyan",
+            0x00f900: "Green",
+            0xff40ff: "Magenta",
+            0xff9300: "Orange",
+            0x942192: "Purple",
+            0xff2600: "Red",
+            0xfffb00: "Yellow",
+            0xffffff: "White"
+        ]
+    }
+    
+    static public var ApplePalletColorMapNameToValue:[String:UInt32] {
+        return [
+            "Black":0x000000,
+            "Blue":0x0433ff,
+            "Brown":0xaa7942,
+            "Cyan":0x00fdff,
+            "Green":0x00f900,
+            "Magenta":0xff40ff,
+            "Orange":0xff9300,
+            "Purple":0x942192,
+            "Red":0xff2600,
+            "Yellow":0xfffb00,
+            "White":0xffffff
+        ]
+    }
+}
+
+extension Color {
+  static public var W3CColorMapValueToName:[UInt32:String] {
     return [
       0xf0f8ff:"aliceblue",
       0xfaebd7:"antiquewhite",
@@ -162,7 +196,7 @@ extension Color {
     ]
   }
 
-  static var mapNameToValue:[String:UInt32] {
+  static public var W3CColorMapNameToValue:[String:UInt32] {
     return [
              "aliceblue":0xf0f8ff,
              "antiquewhite":0xfaebd7,
