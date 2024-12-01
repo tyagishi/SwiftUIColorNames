@@ -56,11 +56,25 @@ public extension Color {
         #endif
         return (UInt32(round(red * 255.0)), UInt32(round(green * 255.0)), UInt32(round(blue * 255.0)))
     }
+    
+    var rgbaIntValues: (r: UInt32, g: UInt32, b: UInt32, a: UInt32) {
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        #if os(macOS)
+        if let sysColor = SysColor(self).usingColorSpace(.deviceRGB) {
+            sysColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        }
+        #elseif os(iOS)
+        let sysColor = SysColor(self)
+        sysColor.getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        #endif
+        return (UInt32(round(red * 255.0)), UInt32(round(green * 255.0)), UInt32(round(blue * 255.0)), UInt32(round(alpha * 255.0)))
+    }
 
     var rgbUInt32: UInt32 {
-        let red:UInt32 = self.rgbIntValues.r
-        let green:UInt32 = self.rgbIntValues.g
-        let blue:UInt32 = self.rgbIntValues.b
+        let (red, green, blue) = self.rgbIntValues
         return UInt32(red << 16 + green << 8 + blue)
     }
     
